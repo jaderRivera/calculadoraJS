@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+    background: silver;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2.0rem;
+    border:  1px solid black;
+    border-radius: 10px;
+}
+
+.calculator__display{
+    padding: 25px 15px;
+    text-align: right;
+    overflow-x: auto;
+    background: white;
+}
+
+.calculator__Keypard{
+    display: flex;
+    width: 100%;
+}
+
+.keypard__numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.keypard__buttom{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px silver;
+}
+
+.keypard__buttom:hover{
+    filter: brightness(35%);
+    transition: filter .25%;
+}
+
+.keypard__buttom.large{
+    width: 50%;
+    background: blue;
+}
+
+.keypard__buttom.blue{
+    background: blue;
+}
+
